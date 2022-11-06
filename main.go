@@ -20,6 +20,7 @@ func main() {
 	{
 		r.POST("/check", ico.Handler(check.Check{}))
 		r.POST("/throw", ico.Handler(dice.Throw{}))
+		r.POST("/replay", ico.Handler(dice.Replay{}))
 	}
 	engine.Run()
 }
